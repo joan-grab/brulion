@@ -1,6 +1,61 @@
-body {
+* {
     box-sizing: border-box;
 }
-h1 {
-    color: blue;
+
+body {
+    margin: 0;
+}
+
+aside {
+    width: 290px;
+    height: 100%;
+    padding: 60px 45px 45px 40px;
+
+    position: fixed;
+    display: inline-block;
+
+    background-color: #000;
+    color: #fff;
+}
+
+.flex-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+
+}
+
+nav {
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+li {
+    padding: 3px 0 3px 0;
+}
+
+.social {
+    padding-top: 40px;
+}
+
+i {
+    color: #fff;
+    font-size: 18px;
+    padding: 5px;
+}
+
+section {
+    width: 100%;
+    padding-left: 290px;
+
+    display: inline-block;
+
 }
