@@ -67,12 +67,21 @@ section {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 300px 300px 300px 300px;   
+    grid-template-columns: repeat( 5 , 1fr );
+    grid-template-rows: repeat(4, auto);
+    grid-auto-flow: row dense;  
 }
 
-.tile {
+.box {
+    display: grid;
+
     overflow: hidden;
+}
+.content img {
+    /* display: block;
+    width: inherit; */
+    width: 100%;
+    height: auto;
 }
 
 .tile1 {
