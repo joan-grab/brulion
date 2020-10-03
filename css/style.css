@@ -58,6 +58,8 @@ i {
     padding: 5px;
 }
 
+ /* home gallery */
+
 section {
     width: 100%;
     padding-left: 290px;
@@ -73,14 +75,20 @@ section {
 }
 
 .box {
-    display: grid;
+    position: relative;
     overflow: hidden;
 }
+
+.content {
+}
+
 .content img {
     width: 100%;
     height: auto;
     vertical-align: top;
 }
+
+/* boxs sizes */
 
 .tile1 {
     grid-column: 1 / 3;
@@ -122,3 +130,30 @@ section {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
 } 
+
+/* hover box */
+
+.box:hover > .hover-box {
+    display: block;
+}
+
+
+.hover-box {
+    display: none;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    width: 100%;
+    height: 100%;
+    
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.hover-box .title {
+    padding: 10px 0px 0px 30px;
+    color: #fff;
+}
