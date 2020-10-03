@@ -59,7 +59,7 @@ i {
 }
 
 section {
-    width: 100vw;
+    width: 100%;
     padding-left: 290px;
 
     display: inline-block;
@@ -74,14 +74,12 @@ section {
 
 .box {
     display: grid;
-
     overflow: hidden;
 }
 .content img {
-    /* display: block;
-    width: inherit; */
     width: 100%;
     height: auto;
+    vertical-align: top;
 }
 
 .tile1 {
