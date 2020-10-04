@@ -4,7 +4,10 @@
 
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+/* side menu */
 
 aside {
     width: 290px;
@@ -29,6 +32,8 @@ aside {
 
 }
 
+/* navigation bar */
+
 nav {
 
 }
@@ -52,7 +57,7 @@ li a {
     padding-top: 40px;
 }
 
-i {
+.social i {
     color: #fff;
     font-size: 18px;
     padding: 5px;
@@ -63,8 +68,6 @@ i {
 section {
     width: 100%;
     padding-left: 290px;
-
-    display: inline-block;
 }
 
 .grid-container {
@@ -165,4 +168,49 @@ section {
 .hover-box .title {
     padding: 10px 0px 0px 30px;
     color: #fff;
+}
+
+.hover-box .title .i {
+    font-size: 24px
+}
+
+/* contact page */
+
+.contact {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.contact-content {
+    width: inherit;
+    height: 500px;
+    padding: 10px 400px 150px 150px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-header {
+    width: 100%;
+}
+
+.contact-header h1 {
+    margin-left: 20px;
+}
+
+.portrait {
+    width: 200px;
+    margin: 0px 50px 0px 50px;
+}
+
+.portrait img {
+    overflow: hidden;
+    max-width:100%;
+    max-height:100%;
+    border-radius: 100px;
+}
+
+.contact-info {
+    margin-left: 50px;
 }
