@@ -144,7 +144,6 @@ section {
     transform: scale(1.08);
 }
 
-
 .hover-box {
     display: none;
 
@@ -159,7 +158,8 @@ section {
     background-color: #000;
     opacity: 0;
 
-    transition: opacity 10s ease;
+    /* transition: opacity 10s ease; */
+    /* transition nie działa z display none */
 }
 
 .hover-box .title {
