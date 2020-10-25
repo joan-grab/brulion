@@ -28,7 +28,7 @@ body {
 aside {
     width: 290px;
     height: 100%;
-    padding: 60px 45px 45px 40px;
+    padding: 60px 45px 45px 0px;
 
     position: fixed;
     display: inline-block;
@@ -42,6 +42,10 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.logo {
+    padding-left: 30px;
 }
 
 .logo img{
@@ -60,18 +64,39 @@ ul {
 }
 
 li {
-    padding: 3px 0 3px 0;
+    padding: 7px 0 7px 0;
 }
 
 li a {
+    padding-left: 40px;
+    position: relative;
     text-decoration: none;
     color: #fff;
     font-family: "HelveticaNeueLTProBd", Helvetica, Arial, sans-serif;
 }
 
+li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: auto;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
 
 .social {
     padding-top: 40px;
+    padding-left: 40px;
 }
 
 .social i {
@@ -165,11 +190,11 @@ section {
 
 /* hover box */
 
-.box:hover > .hover-box {
+.box:hover .hover-box {
     display: block;  
 }
 
-.box:hover > .content img {
+.box:hover .content img {
     transform: scale(1.08);
     filter: brightness(18%);
     -webkit-filter: brightness(18%);
