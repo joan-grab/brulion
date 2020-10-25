@@ -1,10 +1,25 @@
+@font-face {
+    font-family: "HelveticaNeueLTProBd";
+    src: url(../fonts/HelveticaNeueLTPro-Bd.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "HelveticaNeueLTProLt";
+    src: url(../fonts/HelveticaNeueLTPro-Lt.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "HelveticaNeueLTProLtIt0";
+    src: url(../fonts/HelveticaNeueLTPro-LtIt_0.otf) format("opentype");
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueLTProLt";
     position: relative;
 }
 
@@ -51,6 +66,7 @@ li {
 li a {
     text-decoration: none;
     color: #fff;
+    font-family: "HelveticaNeueLTProBd", Helvetica, Arial, sans-serif;
 }
 
 
@@ -173,6 +189,10 @@ section {
     padding: 10px 30px 20px 30px;
 }
 
+.hover-box, .hover-box * {
+    cursor: pointer;
+}
+
 .hover-box .hover-content {
     width: 100%;
     height: 100%;
@@ -193,7 +213,7 @@ section {
 
 .title p {
     margin: 0px;
-    font-style: italic;
+    font-family: "HelveticaNeueLTProLtIt0", Helvetica, Arial, sans-serif;
     font-size: 14px;
 }
 
@@ -239,7 +259,7 @@ section {
     right: 30px;
     color: #fff;
     font-size:30px;
-
+    cursor: pointer;
 }
 
 /* portfolio page */
@@ -256,6 +276,10 @@ section {
 }
 .project-box {
     padding-bottom: 50px;
+}
+
+.project, .project * {
+    cursor: pointer;
 }
 
 .project-image img {
@@ -281,7 +305,7 @@ section {
 
 .project-title p {
     margin: 0px;
-    font-style: italic;
+    font-family: "HelveticaNeueLTProLtIt0", Helvetica, Arial, sans-serif;
     color: #868686;
     font-size: 14px;
 }
