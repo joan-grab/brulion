@@ -608,23 +608,27 @@ section {
 .contact {
     height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
+
 }
 
 .contact-content {
-    width: inherit;
-    height: 500px;
-    padding: 10px 90px 150px 40px;
-    margin: auto;
+    /* width: inherit;
+    height: 500px; */
+    padding: 10px 90px 100px 40px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-between; */
 }
 
 .contact-header {
     width: 100%;
     /* min-width: 650px; */
     max-width: 1000px;
+    padding-bottom: 50px;
 }
 
 .contact-header h1 {
@@ -632,13 +636,15 @@ section {
 }
 
 .contact-box {
+    max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .portrait {
     width: 200px;
-    margin: 0px 50px 0px 50px;
+    margin: 0px 50px 25px 50px;
 }
 
 .portrait img {
@@ -651,27 +657,34 @@ section {
 }
 
 .contact-info {
-    margin-left: 50px;
+    margin: 25px 50px 0px 50px;
 }
 
 @media screen and (max-width: 777px) {
 
     .contact {
-        display: block;
+        height: auto;
     }
-    
+
     .contact-content {
         padding: 60px 20px 40px 20px;
-        margin: auto;
-        justify-content: center;
     }
     
     .contact-header {
         max-width: 570px;
     }
-        
+
+}
+
+@media screen and (max-width: 460px) {
+
+    .portrait {
+        width: 200px;
+        margin: 0px 0px 25px 0px;
+    }
+
     .contact-info {
-        margin-left: 50px;
+        margin: 25px 0px 0px 0px;
     }
 
 }
