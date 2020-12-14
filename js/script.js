@@ -8,7 +8,6 @@ if (openGallery !== null) {
             window.scrollTo(0, 0);
             document.getElementById('home').style.position='fixed';
             document.getElementById('project-view-home').style.display='block';
-            console.log(event.target.dataset.id);
         }
     });
 }
@@ -17,7 +16,6 @@ const closeGallery = document.getElementById('project-view-home');
 
 if (closeGallery !== null) {
     closeGallery.addEventListener('click', event => {
-        console.log(event.target.id);
         if (event.target.id === 'project-view-home' ||
             event.target.id === 'home-close' ) { 
             document.getElementById('home').style.position='static';
@@ -37,7 +35,6 @@ if (openPortfolio !== null) {
             event.target.parentElement.className === 'project-title')  { 
             document.getElementById('portfolio-page').style.position='fixed';
             document.getElementById('project-view-portfolio').style.display='block';
-            console.log(event.target.dataset.id);
         }
     });
 }
@@ -46,8 +43,6 @@ const closePortfolio = document.getElementById('project-view-portfolio');
 
 if (closePortfolio !== null) {
     closePortfolio.addEventListener('click', event => {
-        console.log(event.target.id);
-        console.log(event.target.className);
         if (event.target.id === 'project-view-portfolio' ||
             event.target.id === 'port-close' ) { 
             document.getElementById('portfolio-page').style.position='static';
