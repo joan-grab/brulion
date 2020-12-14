@@ -614,19 +614,15 @@ section {
 }
 
 .contact-content {
-    /* width: inherit;
-    height: 500px; */
     padding: 10px 90px 100px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* justify-content: space-between; */
 }
 
 .contact-header {
     width: 100%;
-    /* min-width: 650px; */
     max-width: 1000px;
     padding-bottom: 50px;
 }
