@@ -68,7 +68,6 @@ aside {
         display: block;
     }
 
-
     #home .logo {
         text-align: center;
     }
@@ -281,7 +280,6 @@ section {
     section {
         padding-left: 0px;
     }
-
 }
 
 @media screen and (max-width: 1185px) {
@@ -452,7 +450,8 @@ section {
     padding: 10px 30px 20px 30px;
 }
 
-.hover-box, .hover-box * {
+.hover-box, 
+.hover-box * {
     cursor: pointer;
 }
 
@@ -487,7 +486,8 @@ section {
 
 /* project view */
 
-#project-view-home, #project-view-portfolio {
+#project-view-home,
+#project-view-portfolio {
     width: 100%;
     height: auto;
     background-color: rgba(0, 0, 0, 0.9);
@@ -556,7 +556,8 @@ section {
     padding-bottom: 50px;
 }
 
-.project, .project * {
+.project,
+.project * {
     cursor: pointer;
 }
 
